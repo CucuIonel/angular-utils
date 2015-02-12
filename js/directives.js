@@ -1,6 +1,6 @@
 angular.module('app.directives', [])
 .directive('editme', function(){
-    var editTemplate = '<input ng-show="isEditMode" ng-dblclick="switchToPreview()" type="text" ng-model="textContent">';
+    var editTemplate = '<input ng-show="isEditMode" ng-dblclick="switchToPreview()" type="text" ng-model="textContent" class="form-control">';
     var previewTemplate = '<div ng-hide="isEditMode" ng-dblclick="switchToEdit()">{{textContent}}</div>';
     return {
         restrict: 'E',
